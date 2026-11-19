@@ -57,6 +57,20 @@ Mean error rose with mask size for all methods. The U-Net's relative gap to Tele
 
 The U-Net often filled missing areas with smooth or blurry color approximations, losing fine object detail. Classical inpainting could preserve nearby color and edge continuity better in some cases, but sometimes produced wedge-like or pinwheel distortions when extrapolating across large, semantically complex gaps. Neither approach reliably recovered obscured facial details in the examined examples. **Pixel-level accuracy is not equivalent to plausible semantic reconstruction.**
 
+### Qualitative Reconstruction Comparison
+
+![Qualitative comparison](qualitative_comparison.png)
+
+The visual comparison highlights differences between
+learned and classical reconstruction methods.
+
+The U-Net generates smooth, blurry approximations,
+while Telea and Navier-Stokes produce sharper but
+sometimes geometrically distorted reconstructions.
+
+These examples demonstrate why pixel-level accuracy
+alone cannot fully capture perceptual quality.
+
 ## Repository layout
 
 
