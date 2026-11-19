@@ -74,18 +74,26 @@ alone cannot fully capture perceptual quality.
 ## Repository layout
 
 
+
+```text
 beyond-the-missing-pixels/
 ├── README.md
 ├── experiment.ipynb
 ├── clean_experiment.ipynb
 ├── results_analysis.ipynb
 ├── experiment_config.json
+├── requirements.txt
 ├── final_test_mae.png
 ├── mask_size_comparison.png
-├── results/
-└── .gitignore
+├── qualitative_comparison.png
+└── results/
+```
   
-This starter package includes the aggregate analysis notebook, configuration, summary CSVs, and figures. **The original training/evaluation notebook is included as `experiment.ipynb`. Model weights, image-level CSVs, and the qualitative comparison figure are not yet included in this repository.** Model checkpoint files (`.pth`) are kept outside ordinary Git history unless using a suitable large-file storage mechanism.
+
+This repository includes experiment notebooks, configuration files, summary CSVs, and quantitative and qualitative visualizations. The original training/evaluation notebook is included as `experiment.ipynb`.
+
+Model weights and image-level evaluation CSVs are not included in this repository. Model checkpoint files (`.pth`) are kept outside ordinary Git history unless using a suitable large-file storage mechanism.
+
 
 ## Reproducing the analysis
 
