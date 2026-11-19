@@ -28,6 +28,14 @@ This project examines how three image-reconstruction methods respond to missing 
 | Navier–Stokes | 0.105862 | 0.047653 |
 | Improved U-Net | 0.122866 | 0.046257 |
 
+### Final Test Performance
+
+![Comparison of reconstruction methods](final_test_mae.png)
+
+### Effect of Missing Region Size
+
+![Reconstruction error by mask size](mask_size_comparison.png)
+
 All three methods were compared on the same 3,669 test images and synthetic masks (test random seed: `2026`). Telea yielded the lowest mean masked MAE. The U-Net had approximately **17.5% more error than Telea** on this test.
 
 ## Development findings
