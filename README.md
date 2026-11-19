@@ -62,7 +62,7 @@ beyond-the-missing-pixels/
 └── .gitignore
 ```
 
-This starter package includes the aggregate analysis notebook, configuration, summary CSVs, and figures. **The original training/evaluation notebook, model weights, image-level CSVs, and qualitative figure must still be exported from Colab/Google Drive.** Model checkpoint files (`.pth`) are kept outside ordinary Git history unless using a suitable large-file storage mechanism.
+This starter package includes the aggregate analysis notebook, configuration, summary CSVs, and figures. **The original training/evaluation notebook is included as `experiment.ipynb`. Model weights, image-level CSVs, and the qualitative comparison figure are not yet included in this repository.** Model checkpoint files (`.pth`) are kept outside ordinary Git history unless using a suitable large-file storage mechanism.
 
 ## Reproducing the analysis
 
