@@ -59,17 +59,18 @@ The U-Net often filled missing areas with smooth or blurry color approximations,
 
 ## Repository layout
 
-```text
+
 beyond-the-missing-pixels/
 ├── README.md
-├── results_analysis.ipynb        # Runs on included aggregate results
-├── experiment.ipynb              # Original training notebook: export from Colab
-├── experiment_config.json       # Configuration reconstructed from experiment
-├── figures/                     # Aggregate comparison plots
-├── results/                     # Aggregate results reported in Colab
+├── experiment.ipynb
+├── clean_experiment.ipynb
+├── results_analysis.ipynb
+├── experiment_config.json
+├── final_test_mae.png
+├── mask_size_comparison.png
+├── results/
 └── .gitignore
-```
-
+  
 This starter package includes the aggregate analysis notebook, configuration, summary CSVs, and figures. **The original training/evaluation notebook is included as `experiment.ipynb`. Model weights, image-level CSVs, and the qualitative comparison figure are not yet included in this repository.** Model checkpoint files (`.pth`) are kept outside ordinary Git history unless using a suitable large-file storage mechanism.
 
 ## Reproducing the analysis
