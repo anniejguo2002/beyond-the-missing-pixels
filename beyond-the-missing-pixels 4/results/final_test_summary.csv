@@ -1,0 +1,4 @@
+Method,Mean masked MAE,Std Dev
+Telea,0.10455,0.04708
+Navier-Stokes,0.105862,0.047653
+Improved U-Net,0.122866,0.046257

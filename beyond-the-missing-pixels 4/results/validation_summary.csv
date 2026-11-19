@@ -1,0 +1,4 @@
+method,baseline_mean_mae,improved_mean_mae
+U-Net,0.14472,0.1214
+Telea,0.103539,
+Navier-Stokes,0.105177,

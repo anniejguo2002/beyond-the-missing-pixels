@@ -1,0 +1,29 @@
+{
+  "project": "Beyond the Missing Pixels",
+  "dataset": "Oxford-IIIT Pet",
+  "resolution": [
+    128,
+    128
+  ],
+  "data_splits": {
+    "train": 3312,
+    "validation": 368,
+    "official_test": 3669
+  },
+  "model": "compact 3-level U-Net, four input channels (damaged RGB + binary mask), sigmoid RGB prediction",
+  "loss": "masked L1",
+  "training": {
+    "baseline": "3 epochs on 500 images, learning rate 0.001",
+    "improved": "one additional completed epoch on 3312 images, learning rate 0.0003"
+  },
+  "eval": {
+    "metric": "mean absolute error over missing RGB pixels on [0,1] scale",
+    "test_seed": 2026,
+    "random_mask_size_range": [
+      20,
+      60
+    ],
+    "classical_inpainting_radius": 3
+  },
+  "provenance": "Values transcribed from completed Google Colab runs shared in conversation; original notebook and full per-image results must be exported from Colab/Drive."
+}
